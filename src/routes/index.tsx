@@ -133,9 +133,9 @@ function PortfolioHome() {
 
       <section className="section-shell py-24 md:py-36">
         <SectionHeading number="01" title="Software Skills" />
-        <div className="marquee-mask group mt-12 overflow-hidden border-y border-border bg-surface/45 py-9 backdrop-blur-md">
-          <div className="marquee-track flex w-max items-center gap-8 group-hover:[animation-play-state:paused]">
-            {[...SOFTWARE, ...SOFTWARE].map((item, index) => <div key={`${item}-${index}`} className="software-item flex items-center gap-8 whitespace-nowrap font-heading text-xl font-bold uppercase text-muted-foreground transition-all duration-300 hover:scale-105 hover:text-highlight md:text-3xl"><span className="size-1.5 rounded-full bg-highlight/70" />{item}</div>)}
+        <div className="marquee-mask group mt-10 overflow-hidden border-y border-border bg-surface/45 py-7 backdrop-blur-md">
+          <div className="marquee-track flex w-max items-center gap-6 group-hover:[animation-play-state:paused]">
+            {[...SOFTWARE, ...SOFTWARE].map((item, index) => <div key={`${item}-${index}`} className="software-item flex items-center gap-6 whitespace-nowrap font-heading text-base font-bold uppercase text-muted-foreground transition-all duration-300 hover:scale-105 hover:text-highlight md:text-2xl"><span className="size-1.5 rounded-full bg-highlight/70" />{item}</div>)}
           </div>
         </div>
       </section>
@@ -194,7 +194,7 @@ function PortraitCard({ reduceMotion, setCursorLabel }: { reduceMotion: boolean;
   };
   return <motion.div onPointerMove={handlePointer} onPointerEnter={() => setCursorLabel("HELLO")} onPointerLeave={() => { setTilt({ x: 0, y: 0 }); setCursorLabel(""); }} whileHover={reduceMotion ? {} : { scale: 1.045 }} whileTap={{ scale: 0.98, rotate: -1 }} animate={{ rotateX: tilt.x, rotateY: tilt.y }} transition={{ type: "spring", stiffness: 180, damping: 20 }} className="group relative mx-auto w-full max-w-[310px] [perspective:900px]">
     <div className="absolute -inset-3 translate-x-3 translate-y-3 rounded-[5px] border border-highlight/20 bg-teal/40 transition-all duration-500 group-hover:translate-x-4 group-hover:translate-y-4 group-hover:shadow-[0_20px_70px_var(--shadow-accent)]" />
-    <div className="relative aspect-[4/5] overflow-hidden rounded-[5px] border border-border bg-surface"><img src={portrait} alt="Industrial designer portrait placeholder" width={1024} height={1280} className="h-full w-full object-cover grayscale-[20%] transition duration-700 group-hover:grayscale-0" /><div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-linear-to-t from-background/90 to-transparent p-5 pt-16"><span className="font-body text-[9px] uppercase tracking-[0.2em]">Portrait / replace me</span><span className="flex size-9 items-center justify-center rounded-full border border-highlight/50 bg-deep/80"><ArrowDownRight size={14} className="text-highlight" /></span></div></div>
+    <div className="relative aspect-[4/5] overflow-hidden rounded-[5px] border border-border bg-surface"><img src={portrait} alt="Industrial designer portrait placeholder" width={1024} height={1280} className="h-full w-full object-cover grayscale-[20%] transition duration-700 group-hover:grayscale-0" /><div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-linear-to-t from-background/90 to-transparent p-5 pt-16"><span className="flex size-9 items-center justify-center rounded-full border border-highlight/50 bg-deep/80"><ArrowDownRight size={14} className="text-highlight" /></span></div></div>
   </motion.div>;
 }
 

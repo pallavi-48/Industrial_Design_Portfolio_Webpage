@@ -72,17 +72,17 @@
 :root {
   --radius: 0.35rem;
   --background: oklch(0 0 0);
-  --foreground: oklch(1 0 0);
+  --foreground: oklch(0.96 0.016 248);
   --card: oklch(0.22258 0.03198 228.72);
-  --card-foreground: oklch(1 0 0);
+  --card-foreground: oklch(0.96 0.016 248);
   --popover: oklch(0.21116 0.03682 223.91);
-  --popover-foreground: oklch(1 0 0);
+  --popover-foreground: oklch(0.96 0.016 248);
   --primary: oklch(0.81684 0.15459 137.22);
   --primary-foreground: oklch(0.18 0.04 170);
   --secondary: oklch(0.29744 0.04199 207.65);
   --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.26988 0.04222 169.54);
-  --muted-foreground: oklch(0.72 0.025 190);
+  --muted-foreground: oklch(0.77 0.024 190);
   --accent: oklch(0.81684 0.15459 137.22);
   --accent-foreground: oklch(0.15 0.04 170);
   --destructive: oklch(0.577 0.245 27.325);
