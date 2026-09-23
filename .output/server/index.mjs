@@ -16,54 +16,54 @@ globalThis.__nitro_vite_envs__ = services;
 //#endregion
 //#region #nitro/virtual/public-assets-data
 var public_assets_data_default = {
-	"/assets/index-DgqL_LAN.js": {
+	"/assets/routes-UQFrJ0ya.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"5c0a0-6AYnTVBLnGiJOLKnqHcu7Wnldhs\"",
-		"mtime": "2026-09-23T22:58:37.132Z",
-		"size": 376992,
-		"path": "../public/assets/index-DgqL_LAN.js"
-	},
-	"/assets/project-chair-Dud_xy1u.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"2da46-xHPXv5AA5aftRnIaH0tT90lNLxo\"",
-		"mtime": "2026-09-23T22:58:37.135Z",
-		"size": 186950,
-		"path": "../public/assets/project-chair-Dud_xy1u.jpg"
-	},
-	"/assets/designer-portrait-BNDIgd-v.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"3ee23-AnsDM0nojv1CuqY1LIsKIEWSGtU\"",
-		"mtime": "2026-09-23T22:58:37.135Z",
-		"size": 257571,
-		"path": "../public/assets/designer-portrait-BNDIgd-v.jpg"
+		"etag": "\"2432e-SeLj0u4me/Tn92Idf4CDxYuDfFA\"",
+		"mtime": "2026-09-23T23:14:38.030Z",
+		"size": 148270,
+		"path": "../public/assets/routes-UQFrJ0ya.js"
 	},
 	"/assets/project-device-DQgemGsk.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"1cf2d-uD+rrTW+Cm6CJUTs6X+A6ckK+kQ\"",
-		"mtime": "2026-09-23T22:58:37.137Z",
+		"mtime": "2026-09-23T23:14:38.040Z",
 		"size": 118573,
 		"path": "../public/assets/project-device-DQgemGsk.jpg"
 	},
-	"/assets/routes-UQFrJ0ya.js": {
-		"type": "text/javascript; charset=utf-8",
-		"etag": "\"2432e-SeLj0u4me/Tn92Idf4CDxYuDfFA\"",
-		"mtime": "2026-09-23T22:58:37.133Z",
-		"size": 148270,
-		"path": "../public/assets/routes-UQFrJ0ya.js"
+	"/assets/designer-portrait-BNDIgd-v.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"3ee23-AnsDM0nojv1CuqY1LIsKIEWSGtU\"",
+		"mtime": "2026-09-23T23:14:38.036Z",
+		"size": 257571,
+		"path": "../public/assets/designer-portrait-BNDIgd-v.jpg"
 	},
 	"/assets/project-research-D9RQzyFU.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"38130-5YpFqZajMwdyXvWBmnsVzXrWQPs\"",
-		"mtime": "2026-09-23T22:58:37.138Z",
+		"mtime": "2026-09-23T23:14:38.041Z",
 		"size": 229680,
 		"path": "../public/assets/project-research-D9RQzyFU.jpg"
 	},
 	"/assets/styles-D50OqYCP.css": {
 		"type": "text/css; charset=utf-8",
 		"etag": "\"16ef6-l/Tpj+R8JkK0szgJ3UPm0yFVfjo\"",
-		"mtime": "2026-09-23T22:58:37.140Z",
+		"mtime": "2026-09-23T23:14:38.042Z",
 		"size": 93942,
 		"path": "../public/assets/styles-D50OqYCP.css"
+	},
+	"/assets/index-DgqL_LAN.js": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"5c0a0-6AYnTVBLnGiJOLKnqHcu7Wnldhs\"",
+		"mtime": "2026-09-23T23:14:38.029Z",
+		"size": 376992,
+		"path": "../public/assets/index-DgqL_LAN.js"
+	},
+	"/assets/project-chair-Dud_xy1u.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"2da46-xHPXv5AA5aftRnIaH0tT90lNLxo\"",
+		"mtime": "2026-09-23T23:14:38.038Z",
+		"size": 186950,
+		"path": "../public/assets/project-chair-Dud_xy1u.jpg"
 	}
 };
 //#endregion
