@@ -9,7 +9,10 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
+import Particles from "../components/Particles";
 import appCss from "../styles.css?url";
+
+const PARTICLE_COLORS = ["#91DA73", "#6FAF63", "#B8E8A0"];
 
 function NotFoundComponent() {
   return (
@@ -114,8 +117,26 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <div className="relative isolate min-h-screen bg-background text-foreground">
+        <Particles
+          particleCount={220}
+          particleSpread={3.2}
+          speed={0.08}
+          particleColors={PARTICLE_COLORS}
+          moveParticlesOnHover={true}
+          particleHoverFactor={0.18}
+          alphaParticles={true}
+          particleBaseSize={70}
+          sizeRandomness={0.8}
+          cameraDistance={20}
+          disableRotation={false}
+          pixelRatio={1}
+        />
+        <div className="relative z-10">
+          {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+          <Outlet />
+        </div>
+      </div>
     </QueryClientProvider>
   );
 }

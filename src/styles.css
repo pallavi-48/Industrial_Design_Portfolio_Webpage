@@ -70,7 +70,7 @@
 }
 
 :root {
-  --radius: 0.35rem;
+  --radius: 0.5rem;
   --background: oklch(0 0 0);
   --foreground: oklch(0.96 0.016 248);
   --card: oklch(0.22258 0.03198 228.72);
@@ -212,17 +212,36 @@
 @utility archive-file {
   position: relative;
   overflow: hidden;
+  isolation: isolate;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: color-mix(in oklab, var(--surface) 72%, transparent);
   backdrop-filter: blur(18px);
-  transition: border-color 400ms ease, background-color 400ms ease;
+  box-shadow: 0 18px 48px rgb(0 0 0 / 18%), inset 0 1px 0 rgb(145 218 115 / 4%);
+  transition: border-color 400ms ease, background-color 400ms ease, box-shadow 400ms ease;
   &:hover { border-color: color-mix(in oklab, var(--highlight) 50%, transparent); background: color-mix(in oklab, var(--surface-strong) 65%, transparent); }
 }
 
 @utility archive-file-open {
   border-color: color-mix(in oklab, var(--highlight) 55%, transparent);
   background: color-mix(in oklab, var(--surface) 82%, transparent);
+  box-shadow: 0 24px 64px rgb(0 0 0 / 24%), inset 0 1px 0 rgb(145 218 115 / 7%);
+}
+
+@utility archive-project-card {
+  transform-origin: center bottom;
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+@utility archive-project-image {
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 2%), 0 8px 24px rgb(0 0 0 / 18%);
+}
+
+.experience-card,
+.leadership-card,
+.experience-image-slot {
+  border-radius: 8px;
 }
 
 @keyframes marquee { to { transform: translateX(-50%); } }

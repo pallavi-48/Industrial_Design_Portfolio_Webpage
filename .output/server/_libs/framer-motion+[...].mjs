@@ -10183,4 +10183,4 @@ function useReducedMotion() {
 	return shouldReduceMotion;
 }
 //#endregion
-export { motion as n, AnimatePresence as r, useReducedMotion as t };
+export { performance_default as i, motion as n, AnimatePresence as r, useReducedMotion as t };

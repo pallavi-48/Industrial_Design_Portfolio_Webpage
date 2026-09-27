@@ -1,0 +1,11 @@
+.scroll-reveal {
+  transform-origin: 0% 50%;
+}
+
+.scroll-reveal__text {
+  display: block;
+}
+
+.scroll-reveal__word {
+  display: inline-block;
+}

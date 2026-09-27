@@ -16,54 +16,152 @@ globalThis.__nitro_vite_envs__ = services;
 //#endregion
 //#region #nitro/virtual/public-assets-data
 var public_assets_data_default = {
-	"/assets/routes-UQFrJ0ya.js": {
-		"type": "text/javascript; charset=utf-8",
-		"etag": "\"2432e-SeLj0u4me/Tn92Idf4CDxYuDfFA\"",
-		"mtime": "2026-09-23T23:14:38.030Z",
-		"size": 148270,
-		"path": "../public/assets/routes-UQFrJ0ya.js"
-	},
-	"/assets/project-device-DQgemGsk.jpg": {
+	"/assets/branding-2-BwCNMqSl.jpg": {
 		"type": "image/jpeg",
-		"etag": "\"1cf2d-uD+rrTW+Cm6CJUTs6X+A6ckK+kQ\"",
-		"mtime": "2026-09-23T23:14:38.040Z",
-		"size": 118573,
-		"path": "../public/assets/project-device-DQgemGsk.jpg"
+		"etag": "\"30e26-99ZNVTOhJDpgTAZmbv7zUzSoVH0\"",
+		"mtime": "2026-09-27T14:11:23.616Z",
+		"size": 200230,
+		"path": "../public/assets/branding-2-BwCNMqSl.jpg"
+	},
+	"/assets/branding-1-CMjKphXZ.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"405ce-4l8sDW00T0Q0T9DWKJbZtQ86yx4\"",
+		"mtime": "2026-09-27T14:11:23.614Z",
+		"size": 263630,
+		"path": "../public/assets/branding-1-CMjKphXZ.jpg"
+	},
+	"/assets/index-CFTe6vrW.css": {
+		"type": "text/css; charset=utf-8",
+		"etag": "\"f6-RZ61GWwZkiRC9RVhFDF4O74o3cM\"",
+		"mtime": "2026-09-27T14:11:23.621Z",
+		"size": 246,
+		"path": "../public/assets/index-CFTe6vrW.css"
 	},
 	"/assets/designer-portrait-BNDIgd-v.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"3ee23-AnsDM0nojv1CuqY1LIsKIEWSGtU\"",
-		"mtime": "2026-09-23T23:14:38.036Z",
+		"mtime": "2026-09-27T14:11:23.619Z",
 		"size": 257571,
 		"path": "../public/assets/designer-portrait-BNDIgd-v.jpg"
 	},
-	"/assets/project-research-D9RQzyFU.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"38130-5YpFqZajMwdyXvWBmnsVzXrWQPs\"",
-		"mtime": "2026-09-23T23:14:38.041Z",
-		"size": 229680,
-		"path": "../public/assets/project-research-D9RQzyFU.jpg"
-	},
-	"/assets/styles-D50OqYCP.css": {
-		"type": "text/css; charset=utf-8",
-		"etag": "\"16ef6-l/Tpj+R8JkK0szgJ3UPm0yFVfjo\"",
-		"mtime": "2026-09-23T23:14:38.042Z",
-		"size": 93942,
-		"path": "../public/assets/styles-D50OqYCP.css"
-	},
-	"/assets/index-DgqL_LAN.js": {
+	"/assets/index-DWk5mKgK.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"5c0a0-6AYnTVBLnGiJOLKnqHcu7Wnldhs\"",
-		"mtime": "2026-09-23T23:14:38.029Z",
-		"size": 376992,
-		"path": "../public/assets/index-DgqL_LAN.js"
+		"etag": "\"68c70-7XdnP59vR9lH4/GOuzeQmqUsiX4\"",
+		"mtime": "2026-09-27T14:11:23.601Z",
+		"size": 429168,
+		"path": "../public/assets/index-DWk5mKgK.js"
 	},
-	"/assets/project-chair-Dud_xy1u.jpg": {
+	"/assets/product-design-3-BPikxg97.jpg": {
 		"type": "image/jpeg",
-		"etag": "\"2da46-xHPXv5AA5aftRnIaH0tT90lNLxo\"",
-		"mtime": "2026-09-23T23:14:38.038Z",
-		"size": 186950,
-		"path": "../public/assets/project-chair-Dud_xy1u.jpg"
+		"etag": "\"2c552-N+CZoXRUK4SMKEX/DtBiY58X0ak\"",
+		"mtime": "2026-09-27T14:11:23.654Z",
+		"size": 181586,
+		"path": "../public/assets/product-design-3-BPikxg97.jpg"
+	},
+	"/assets/product-design-2-C_Pvymiq.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"4d2e5-7diPMhK0TJSyC+Mvexls+VI4pXQ\"",
+		"mtime": "2026-09-27T14:11:23.652Z",
+		"size": 316133,
+		"path": "../public/assets/product-design-2-C_Pvymiq.jpg"
+	},
+	"/assets/product-design-1-PoAJijNu.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"30791-qwNFOMYr+YlJXO/oz/GofDfdd1Y\"",
+		"mtime": "2026-09-27T14:11:23.650Z",
+		"size": 198545,
+		"path": "../public/assets/product-design-1-PoAJijNu.jpg"
+	},
+	"/assets/product-design-4-CF9XSlin.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"4abe6-2bLDSIq0rg+W+DkfqFrTDK0ibsM\"",
+		"mtime": "2026-09-27T14:11:23.656Z",
+		"size": 306150,
+		"path": "../public/assets/product-design-4-CF9XSlin.jpg"
+	},
+	"/assets/routes-IpEUaBeK.css": {
+		"type": "text/css; charset=utf-8",
+		"etag": "\"2612-yk3jSay66+Tg4Dneyf4xg8MW5qI\"",
+		"mtime": "2026-09-27T14:11:23.666Z",
+		"size": 9746,
+		"path": "../public/assets/routes-IpEUaBeK.css"
+	},
+	"/assets/research-DJEZfjy6.jpg": {
+		"type": "image/jpeg",
+		"etag": "\"4c161-lNtFUPX9CJaL7F8vhxfIKHFlI04\"",
+		"mtime": "2026-09-27T14:11:23.665Z",
+		"size": 311649,
+		"path": "../public/assets/research-DJEZfjy6.jpg"
+	},
+	"/assets/styles-Ci8cCSMr.css": {
+		"type": "text/css; charset=utf-8",
+		"etag": "\"17e58-6akftHPFusAs4VfX+L5JNZq2ssk\"",
+		"mtime": "2026-09-27T14:11:23.668Z",
+		"size": 97880,
+		"path": "../public/assets/styles-Ci8cCSMr.css"
+	},
+	"/assets/routes-CpLngjoI.js": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"9707f-40AEnPg/ec1cUVgMp/aR/EcbWGY\"",
+		"mtime": "2026-09-27T14:11:23.604Z",
+		"size": 618623,
+		"path": "../public/assets/routes-CpLngjoI.js"
+	},
+	"/assets/pdf.worker.min-yatZIOMy.mjs": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"14fe5e-iGC1A5RKrS0JublO5W5Pq4QUymk\"",
+		"mtime": "2026-09-27T14:11:23.648Z",
+		"size": 1375838,
+		"path": "../public/assets/pdf.worker.min-yatZIOMy.mjs"
+	},
+	"/assets/b-2-B9PpY-Fr.pdf": {
+		"type": "application/pdf",
+		"etag": "\"1f5ab8-Y1zj6BqTYx3DfbUjhYJZANJQ+Jw\"",
+		"mtime": "2026-09-27T14:11:23.612Z",
+		"size": 2054840,
+		"path": "../public/assets/b-2-B9PpY-Fr.pdf"
+	},
+	"/assets/pd-3-FHcb1m5m.pdf": {
+		"type": "application/pdf",
+		"etag": "\"455448-JS30NTIN5MKUUFK/6X8aOmACkII\"",
+		"mtime": "2026-09-27T14:11:23.637Z",
+		"size": 4543560,
+		"path": "../public/assets/pd-3-FHcb1m5m.pdf"
+	},
+	"/assets/pd-4-w7vpxWvg.pdf": {
+		"type": "application/pdf",
+		"etag": "\"57d66c-QTQP901qeC3Ybf9GKpsI5VIG39A\"",
+		"mtime": "2026-09-27T14:11:23.646Z",
+		"size": 5756524,
+		"path": "../public/assets/pd-4-w7vpxWvg.pdf"
+	},
+	"/assets/pd-1-Ch1_xw2U.pdf": {
+		"type": "application/pdf",
+		"etag": "\"5da6fd-ycXpuMqhLDw54vrg6LjZ9bKeleM\"",
+		"mtime": "2026-09-27T14:11:23.627Z",
+		"size": 6137597,
+		"path": "../public/assets/pd-1-Ch1_xw2U.pdf"
+	},
+	"/assets/pd-2-BdgeQgqw.pdf": {
+		"type": "application/pdf",
+		"etag": "\"5963c6-nSQNW+l6ohvlvdmm/owGee04Grk\"",
+		"mtime": "2026-09-27T14:11:23.632Z",
+		"size": 5858246,
+		"path": "../public/assets/pd-2-BdgeQgqw.pdf"
+	},
+	"/assets/b-1-DzcnWp0f.pdf": {
+		"type": "application/pdf",
+		"etag": "\"78ffe6-4bVjUonEkJVj5rcDdgt+H/xfL2U\"",
+		"mtime": "2026-09-27T14:11:23.609Z",
+		"size": 7929830,
+		"path": "../public/assets/b-1-DzcnWp0f.pdf"
+	},
+	"/assets/r-DYHPqhAG.pdf": {
+		"type": "application/pdf",
+		"etag": "\"8ada67-Kqq3JLp1b5LABqPaZRa5/4SY8/I\"",
+		"mtime": "2026-09-27T14:11:23.663Z",
+		"size": 9099879,
+		"path": "../public/assets/r-DYHPqhAG.pdf"
 	}
 };
 //#endregion

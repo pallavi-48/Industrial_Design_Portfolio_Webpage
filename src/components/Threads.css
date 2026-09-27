@@ -1,0 +1,53 @@
+.threads-section {
+  position: relative;
+  width: 100%;
+  height: 36vh;
+  min-height: 280px;
+  max-height: 420px;
+  overflow: hidden;
+  border-block: 1px solid color-mix(in oklab, var(--highlight) 14%, transparent);
+  background: var(--deep);
+}
+
+.threads-outro {
+  width: 100vw;
+  height: clamp(180px, 24vh, 280px);
+  min-height: 180px;
+  max-height: 280px;
+  margin-top: 2rem;
+  margin-left: calc(50% - 50vw);
+}
+
+.contact-section {
+  position: relative;
+  overflow: visible;
+  background: color-mix(in oklab, var(--background) 82%, var(--deep) 18%);
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+}
+
+.threads-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.threads-container canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1023px) {
+  .threads-outro { height: clamp(170px, 22vh, 240px); }
+}
+
+@media (max-width: 639px) {
+  .threads-outro { height: 180px; min-height: 180px; }
+}
