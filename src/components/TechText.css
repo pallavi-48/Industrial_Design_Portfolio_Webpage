@@ -14,19 +14,17 @@
 
 .hero-tech-text {
   width: 100%;
-  height: clamp(82px, 13vw, 175px);
+  height: clamp(72px, 11vw, 145px);
 }
 
 .hero-tech-text--offset {
-  margin-left: 8vw;
-  margin-top: -0.4rem;
-  width: calc(100% - 8vw);
+  margin-left: 0;
+  margin-top: -0.3rem;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .hero-tech-text--offset {
-    margin-left: 15vw;
-    margin-top: -0.85rem;
-    width: calc(100% - 15vw);
+    margin-top: -0.65rem;
   }
 }

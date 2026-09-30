@@ -9,14 +9,13 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
-import Particles from "../components/Particles";
+import Galaxy from "../components/Galaxy";
+import Aurora from "../components/Aurora";
 import appCss from "../styles.css?url";
-
-const PARTICLE_COLORS = ["#91DA73", "#6FAF63", "#B8E8A0"];
 
 function NotFoundComponent() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
+    <div className="flex min-h-screen items-center justify-center bg-transparent px-4">
       <div className="max-w-md text-center">
         <h1 className="text-7xl font-bold text-foreground">404</h1>
         <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
@@ -44,7 +43,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   }, [error]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
+    <div className="flex min-h-screen items-center justify-center bg-transparent px-4">
       <div className="max-w-md text-center">
         <h1 className="text-xl font-semibold tracking-tight text-foreground">
           This page didn't load
@@ -117,21 +116,9 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="relative isolate min-h-screen bg-background text-foreground">
-        <Particles
-          particleCount={220}
-          particleSpread={3.2}
-          speed={0.08}
-          particleColors={PARTICLE_COLORS}
-          moveParticlesOnHover={true}
-          particleHoverFactor={0.18}
-          alphaParticles={true}
-          particleBaseSize={70}
-          sizeRandomness={0.8}
-          cameraDistance={20}
-          disableRotation={false}
-          pixelRatio={1}
-        />
+      <div className="site-background relative isolate min-h-screen text-foreground">
+        <Galaxy className="site-galaxy" />
+        <Aurora className="site-aurora" colorStops={["#315D2A", "#91DA73", "#426B30"]} speed={0.5} blend={0.5} amplitude={1.0} />
         <div className="relative z-10">
           {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
           <Outlet />

@@ -10,6 +10,8 @@ type FolderFloatProps = {
   layout?: "collection";
   isOpen: boolean;
   onToggle: () => void;
+  onHoverStart: () => void;
+  onHoverEnd: () => void;
 };
 
 function getCollectionPosition(index: number, itemCount: number, columns: number) {
@@ -28,7 +30,7 @@ function getCollectionPosition(index: number, itemCount: number, columns: number
   return { x, y };
 }
 
-export function FolderFloat({ id, label, subtitle, items, layout, isOpen, onToggle }: FolderFloatProps) {
+export function FolderFloat({ id, label, subtitle, items, layout, isOpen, onToggle, onHoverStart, onHoverEnd }: FolderFloatProps) {
   const generatedId = useId();
   const contentId = `folder-float-items-${generatedId}`;
 
@@ -51,7 +53,7 @@ export function FolderFloat({ id, label, subtitle, items, layout, isOpen, onTogg
         aria-controls={contentId}
         aria-label={`${isOpen ? "Close" : "Open"} ${label} folder${subtitle ? ` in ${subtitle}` : ""}`}
       >
-        <span className="folder-float__art" aria-hidden="true">
+        <span className="folder-float__art" aria-hidden="true" onPointerEnter={onHoverStart} onPointerLeave={onHoverEnd}>
           {items.map((item, index) => {
             const progress = items.length < 2 ? 0.5 : index / (items.length - 1);
             const angle = (-155 + progress * 130) * (Math.PI / 180);

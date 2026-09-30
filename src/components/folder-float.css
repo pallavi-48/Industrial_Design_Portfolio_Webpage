@@ -19,7 +19,7 @@
   color: var(--foreground);
   background: transparent;
   text-align: center;
-  cursor: none;
+  cursor: pointer;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
 }
@@ -28,6 +28,40 @@
   border-radius: 4px;
   outline: 2px solid var(--highlight);
   outline-offset: 3px;
+}
+
+.folder-float-grid--categories > .folder-float {
+  left: 0;
+  top: 0;
+  transition: left 450ms ease-out, top 450ms ease-out, rotate 450ms ease-out;
+}
+
+.folder-float-grid--categories:hover > .folder-float:nth-child(1) {
+  left: -14px;
+  top: -10px;
+  rotate: -2deg;
+}
+
+.folder-float-grid--categories:hover > .folder-float:nth-child(2) {
+  top: -12px;
+}
+
+.folder-float-grid--categories:hover > .folder-float:nth-child(3) {
+  left: 14px;
+  top: -10px;
+  rotate: 2deg;
+}
+
+.folder-float__button {
+  transform: translateY(0) scale(1);
+  transform-origin: center;
+  transition: transform 450ms ease-out, filter 450ms ease-out;
+}
+
+.folder-float__button:hover,
+.folder-float__button:focus-visible {
+  transform: translateY(-8px) scale(1.04);
+  filter: drop-shadow(0 10px 18px color-mix(in oklab, var(--highlight) 14%, transparent));
 }
 
 .folder-float__art {
@@ -365,6 +399,15 @@
   .folder-float__front,
   .folder-float__lid,
   .folder-float__item {
+    transition: none;
+  }
+
+  .folder-float-grid--categories > .folder-float {
+    animation: none;
+    transition: none;
+  }
+
+  .folder-float__button {
     transition: none;
   }
 
