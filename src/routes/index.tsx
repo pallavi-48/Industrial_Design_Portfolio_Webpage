@@ -28,6 +28,7 @@ import productDesignTwo from "@/assets/product-design-2.jpg";
 import productDesignThree from "@/assets/product-design-3.jpg";
 import productDesignFour from "@/assets/product-design-4.jpg";
 import researchImage from "@/assets/research.jpg";
+import resumePdf from "@/assets/RESUME.pdf";
 
 const pdOne = new URL("../assets/product--1.pdf", import.meta.url).href;
 const pdTwo = new URL("../assets/product--2.pdf", import.meta.url).href;
@@ -36,7 +37,6 @@ const pdFour = new URL("../assets/product--4.pdf", import.meta.url).href;
 const researchPdf = new URL("../assets/research-1.pdf", import.meta.url).href;
 const brandingOnePdf = new URL("../assets/brand-1.pdf", import.meta.url).href;
 const brandingTwoPdf = new URL("../assets/branding -2.pdf", import.meta.url).href;
-const resumePdf = new URL("../assets/RESUME.pdf", import.meta.url).href;
 
 const SOFTWARE_ITEMS = ["SolidWorks", "Rhino", "Fusion 360", "Blender", "Photoshop", "Illustrator", "Figma", "Canva"];
 const SKILL_ITEMS = ["DESIGN AND DOMAIN SKILL", "Product Designing", "Graphic Designing", "Digital Marketing", "Presentation Design", "SOFT SKILL", "Communication", "Public Speaking", "Team Leadership", "Collaboration"];
@@ -218,19 +218,26 @@ function PortfolioHome() {
         <div className="absolute bottom-6 left-10 hidden items-center gap-3 font-body text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:flex"><span className="h-px w-10 bg-highlight/60" /> Scroll to explore</div>
       </section>
 
-      <div className="relative z-10 mx-auto grid w-full max-w-[1440px] grid-cols-1 px-5 md:grid-cols-[minmax(0,1fr)_minmax(280px,390px)] md:gap-12 md:px-10">
-        <div className="w-full max-w-[640px] justify-self-center md:-translate-x-2">
-          <div className="cv-stats-card" aria-label="Portfolio statistics">
+      <div className="relative z-10 mx-auto flex w-full max-w-[1440px] justify-center px-5 py-5 md:px-10 md:py-7">
+        <div className="w-full max-w-[640px]">
+          <motion.div
+            className="cv-stats-strip"
+            aria-label="Portfolio statistics"
+            initial={reduceMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.4 }}
+            transition={{ duration: reduceMotion ? 0 : 0.4, ease: "easeOut" }}
+          >
             <div className="cv-stat"><span className="cv-stat-number">12</span><span className="cv-stat-label">Work<br />Experiences</span></div>
             <div className="cv-stat"><span className="cv-stat-number">4</span><span className="cv-stat-label">Industrial Design<br />Projects</span></div>
             <div className="cv-stat"><span className="cv-stat-number">2</span><span className="cv-stat-label">Branding Design<br />Projects</span></div>
             <div className="cv-stat"><span className="cv-stat-number">1</span><span className="cv-stat-label">Research<br />Project</span></div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
-      <section className="section-shell border-y border-border/50 pb-6 pt-16 md:pb-8 md:pt-28">
-        <Reveal className="mx-auto mt-[60px] max-w-5xl text-center"><WarpText text={INTRO_SEGMENTS.map((segment) => segment.text).join("")} segments={INTRO_SEGMENTS} fontFamily="Poppins, sans-serif" fontWeight={400} fontSize="var(--warp-font-size)" letterSpacing="0em" lineHeight={1.4} warpStrength={0.08} warpScale={1.7} speed={0.55} pointerInfluence={0.42} pointerStrength={0.38} refraction={0.018} ripple className="intro-warp-text" /></Reveal>
+      <section className="section-shell border-y border-border/50 pb-6 pt-4 md:pb-8 md:pt-8">
+        <Reveal className="mx-auto mt-2 max-w-5xl text-center" baseRotation={0} revealFromCenter><WarpText text={INTRO_SEGMENTS.map((segment) => segment.text).join("")} segments={INTRO_SEGMENTS} fontFamily="Poppins, sans-serif" fontWeight={400} fontSize="var(--warp-font-size)" letterSpacing="0em" lineHeight={1.4} warpStrength={0.08} warpScale={1.7} speed={0.55} pointerInfluence={0.42} pointerStrength={0.38} refraction={0.018} ripple className="intro-warp-text" /></Reveal>
       </section>
 
       <section aria-label="Software, skills, and interests" className="section-shell folder-groups-section pb-20 pt-2 md:pb-28 md:pt-3">
@@ -298,7 +305,7 @@ function PortfolioHome() {
         </div>
       </section>
 
-      <footer className="border-t border-border py-8"><Reveal><div className="section-shell flex flex-col gap-5 font-body text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:flex-row md:items-center md:justify-between"><span className="font-heading font-bold text-foreground">Industrial Designer</span><span>© 2026 — All rights reserved</span><div className="flex gap-5"><a href="#connect" className="hover:text-highlight">EMAIL</a><a href="#connect" className="hover:text-highlight">LI</a><a href="#connect" className="hover:text-highlight">PHONE</a></div></div></Reveal></footer>
+      <footer className="border-t border-border py-8"><Reveal><div className="section-shell flex flex-col gap-5 font-body text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:flex-row md:items-center md:justify-between"><span className="font-heading font-bold text-foreground">Industrial Designer</span><span>© 2026 — All rights reserved</span></div></Reveal></footer>
     </main>
   );
 }
@@ -316,7 +323,7 @@ function MagneticButton({ children, onClick }: { children: React.ReactNode; onCl
 
 function SectionHeading({ number, title, compact = false, highlight = false }: { number: string; title: string; compact?: boolean; highlight?: boolean }) { return <Reveal><div className="flex items-end justify-between gap-5 border-b border-border pb-4"><h2 className={`section-title font-heading font-bold uppercase ${compact ? "text-2xl md:text-3xl" : "text-3xl md:text-4xl"} ${highlight ? "text-highlight" : ""}`}>{title}</h2><span className="font-body text-[10px] tracking-[0.2em] text-highlight">({number})</span></div></Reveal>; }
 
-function Reveal({ children, className = "" }: { children: React.ReactNode; className?: string }) { return <ScrollReveal className={className} baseOpacity={0.1} enableBlur baseRotation={3} blurStrength={4}>{children}</ScrollReveal>; }
+function Reveal({ children, className = "", baseRotation = 3, revealFromCenter = false }: { children: React.ReactNode; className?: string; baseRotation?: number; revealFromCenter?: boolean }) { return <ScrollReveal className={className} baseOpacity={0.1} enableBlur baseRotation={baseRotation} blurStrength={4} revealFromCenter={revealFromCenter}>{children}</ScrollReveal>; }
 
 function ExperienceCard({ item, index }: { item: ExperienceEntry; index: number }) {
   const [imageFile, setImageFile] = useState<File | null>(null);

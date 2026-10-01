@@ -279,42 +279,38 @@
   font-size: 2rem;
 }
 
-.cv-stats-card {
+.cv-stats-strip {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   width: min(100%, 640px);
-  height: 160px;
-  overflow: hidden;
-  border: 1px solid color-mix(in oklab, var(--highlight) 42%, transparent);
-  border-radius: 12px;
-  background: #303030;
 }
 
 .cv-stat {
   display: flex;
   min-width: 0;
+  min-height: 112px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.25rem;
-  padding: 0.6rem 0.4rem;
+  gap: 0.45rem;
+  padding: 0.75rem 0.5rem;
   text-align: center;
 }
 
 .cv-stat + .cv-stat {
-  border-left: 1px solid color-mix(in oklab, var(--highlight) 42%, transparent);
+  border-left: 1px solid color-mix(in oklab, var(--highlight) 24%, transparent);
 }
 
 .cv-stat-number {
   color: var(--highlight);
   font-family: var(--font-body);
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1;
 }
 
 .cv-stat-label {
-  color: var(--highlight);
+  color: var(--muted-foreground);
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 400;
@@ -333,9 +329,8 @@
 }
 
 @media (max-width: 639px) {
-  .cv-stats-card {
+  .cv-stats-strip {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    height: auto;
   }
 
   .cv-stat {
@@ -347,15 +342,15 @@
   }
 
   .cv-stat:nth-child(even) {
-    border-left: 1px solid color-mix(in oklab, var(--highlight) 42%, transparent);
+    border-left: 1px solid color-mix(in oklab, var(--highlight) 24%, transparent);
   }
 
   .cv-stat:nth-child(n + 3) {
-    border-top: 1px solid color-mix(in oklab, var(--highlight) 42%, transparent);
+    border-top: 1px solid color-mix(in oklab, var(--highlight) 24%, transparent);
   }
 
   .cv-stat-number {
-    font-size: 2.25rem;
+    font-size: 2.6rem;
   }
 
   .cv-stat-label {

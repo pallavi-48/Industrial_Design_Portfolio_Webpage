@@ -16,6 +16,7 @@ type ScrollRevealProps = {
   enableBlur?: boolean;
   baseRotation?: number;
   blurStrength?: number;
+  revealFromCenter?: boolean;
   rotationEnd?: string;
   wordAnimationEnd?: string;
 };
@@ -50,6 +51,7 @@ export default function ScrollReveal({
   enableBlur = true,
   baseRotation = 3,
   blurStrength = 4,
+  revealFromCenter = false,
   rotationEnd = "bottom bottom",
   wordAnimationEnd = "bottom bottom",
 }: ScrollRevealProps) {
@@ -73,8 +75,17 @@ export default function ScrollReveal({
 
       gsap.fromTo(
         element,
-        { transformOrigin: "0% 50%", rotation: baseRotation },
-        { rotation: 0, ease: "none", scrollTrigger: { trigger: element, scroller, start: "top bottom", end: rotationEnd, scrub: true } },
+        {
+          transformOrigin: revealFromCenter ? "50% 50%" : "0% 50%",
+          rotation: baseRotation,
+          ...(revealFromCenter ? { clipPath: "inset(0% 50% 0% 50%)" } : {}),
+        },
+        {
+          rotation: 0,
+          ...(revealFromCenter ? { clipPath: "inset(0% 0% 0% 0%)" } : {}),
+          ease: "none",
+          scrollTrigger: { trigger: element, scroller, start: "top bottom", end: rotationEnd, scrub: true },
+        },
       );
 
       gsap.fromTo(
@@ -91,7 +102,7 @@ export default function ScrollReveal({
     }, element);
 
     return () => context.revert();
-  }, [baseOpacity, baseRotation, blurStrength, enableBlur, rotationEnd, scrollContainerRef, wordAnimationEnd]);
+  }, [baseOpacity, baseRotation, blurStrength, enableBlur, revealFromCenter, rotationEnd, scrollContainerRef, wordAnimationEnd]);
 
   return (
     <div ref={containerRef} className={`scroll-reveal ${containerClassName} ${className}`.trim()}>
