@@ -28,7 +28,7 @@ import productDesignTwo from "@/assets/product-design-2.jpg";
 import productDesignThree from "@/assets/product-design-3.jpg";
 import productDesignFour from "@/assets/product-design-4.jpg";
 import researchImage from "@/assets/research.jpg";
-import resumePdf from "@/assets/RESUME.pdf";
+import resumePdf from "@/assets/CV-M FATHIMA FAIHA.pdf";
 
 const pdOne = new URL("../assets/product--1.pdf", import.meta.url).href;
 const pdTwo = new URL("../assets/product--2.pdf", import.meta.url).href;
@@ -212,7 +212,7 @@ function PortfolioHome() {
         </div>
         <div className="relative z-10 mt-4 grid w-full md:grid-cols-[minmax(0,1fr)_minmax(280px,390px)] md:gap-12">
           <div className="cv-stats-content flex w-full max-w-[640px] justify-center justify-self-center md:-translate-x-2">
-            <a href={resumePdf} download="RESUME.pdf" className="inline-flex min-h-11 items-center justify-center rounded-full bg-highlight px-7 py-3 font-body text-[11px] font-semibold uppercase tracking-[0.16em] text-accent-foreground transition-colors hover:bg-highlight-strong">DOWNLOAD CV</a>
+            <a href={resumePdf} download="CV-M FATHIMA FAIHA.pdf" className="inline-flex min-h-11 items-center justify-center rounded-full bg-highlight px-7 py-3 font-body text-[11px] font-semibold uppercase tracking-[0.16em] text-accent-foreground transition-colors hover:bg-highlight-strong">DOWNLOAD CV</a>
           </div>
         </div>
         <div className="absolute bottom-6 left-10 hidden items-center gap-3 font-body text-[10px] uppercase tracking-[0.2em] text-muted-foreground md:flex"><span className="h-px w-10 bg-highlight/60" /> Scroll to explore</div>
